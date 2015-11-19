@@ -34,6 +34,6 @@
 
     angular.module('myApp.view3').factory('view3Factory', playerFactory);
     angular.module('myApp.view2').factory('view2Factory', playerFactory);
-
+    angular.module('myApp.view1').factory('view1Factory', playerFactory);
 }());
 

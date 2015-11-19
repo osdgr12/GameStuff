@@ -9,6 +9,19 @@ angular.module('myApp.view3', ['ngRoute'])
         });
     }])
 
-    .controller('View3Ctrl', [function() {
+    .controller('View3Ctrl', ['$scope',function($scope) {
         console.log('view3 is reached');
+        if ($scope) {
+            console.log('its found');
+            $scope.count = 10;
+        }
+
+        $scope.changeCount = function () {
+            console.log('reached the event handler');
+            if($scope.count>0)
+                $scope.count -= 1;
+            if ($scope.count == 0) {
+                alert('You ran out of balls');
+            }
+        };
     }]);

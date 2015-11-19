@@ -17,7 +17,8 @@
         return factory;
     };
 
-    angular.module('myApp.view3').factory('view3Factory',playerFactory);
+    angular.module('myApp.view3').factory('view3Factory', playerFactory);
+    
 
 }());
 

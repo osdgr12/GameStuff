@@ -18,9 +18,12 @@ angular.module('myApp.view3', ['ngRoute'])
 
         if (view3Factory) {
             console.log('factory exists');
+            console.log(view3Factory.getIsBaseball());
+            console.log(view3Factory.getIsGolf());
+            $scope.isBaseball = view3Factory.getIsBaseball();
+            $scope.isGolf = view3Factory.getIsGolf();
         }
-        $scope.isBaseball = true;
-        $scope.isGolf = false;
+        
         $scope.changeCount = function () {
             console.log('reached the event handler');
             if($scope.count>0)

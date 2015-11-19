@@ -1,7 +1,7 @@
 /**
  * Created by Student on 11/18/2015.
  */
-app.factory('playerFactory', function () {
+angular.module('myApp').factory('playerFactory', function () {
     var players = [
         { id: 1, name: "Gaurav", image: "a.png", bb: 10, gb: 10},
         { id: 2, name: "Rajesh", image: "b.png", bb: 10, gb: 10},

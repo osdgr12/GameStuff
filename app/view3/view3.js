@@ -12,19 +12,19 @@ angular.module('myApp.view3', ['ngRoute'])
     .controller('View3Ctrl', ['$scope','view3Factory',function($scope,view3Factory) {
         console.log('view3 is reached');
         $scope.name = view3Factory.getPlayers()[0].name;
-        
+
        $scope.isBaseball = view3Factory.getIsBaseball();
-       
+
        if ($scope.isBaseball) {
            $scope.count = view3Factory.getPlayers()[0].bb;
        }
        else{
            $scope.count = view3Factory.getPlayers()[0].gb;
        }
-        
+
        $scope.changeCount = function () {
             console.log('reached the event handler');
-           
+
            if($scope.isBaseball){
                 if ($scope.count > 0)
                     $scope.count -= 1;
@@ -39,13 +39,13 @@ angular.module('myApp.view3', ['ngRoute'])
                     $scope.homerun = false;
             }
             else {
-                
+
 
                 if ($scope.count > 0)
                     $scope.count -= 1;
                 if ($scope.count == 0) {
                     alert('You ran out of balls');
-                    
+
                 }
 
                 $scope.boolG = true;
@@ -55,6 +55,7 @@ angular.module('myApp.view3', ['ngRoute'])
                     $scope.hole = false;
             }
 
-            
+           $scope.isHitting = true;
+           $timeout(function(){ $scope.isHitting=false; }, 1000);
         };
     }]);

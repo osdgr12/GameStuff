@@ -6,7 +6,8 @@
 </head>
 <body>
     <div>
-        <img ng-show="isBaseball" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="stopBB.png" />
+        <img ng-show="isBaseball && !isHitting" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="stopBB.png" />
+        <img ng-show="isBaseball && isHitting" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="goBB.gif" />
         <img ng-show="!isBaseball" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="http://driveclubs.com/wp-content/uploads/2015/09/A-man-hitting-a-ball-on-the-golf-course-768142-1024x682.jpg" alt="" />
         <div style="float:right; padding-right:10%">
             <h1>Welcome,{{name}}</h1>
@@ -31,8 +32,8 @@
             }
 
             </style>
-            
-            <button style="align-content:center" type="button" ng-click="changeCount()">HIT! </button>
+
+            <button style="align-content:center" type="button" ng-click="changeCount(); ">HIT!</button>
         </div>
     </div>
 </body>

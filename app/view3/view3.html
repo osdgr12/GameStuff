@@ -9,8 +9,29 @@
         <img ng-show="isBaseball" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="stopBB.png" />
         <img ng-show="!isBaseball" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="http://driveclubs.com/wp-content/uploads/2015/09/A-man-hitting-a-ball-on-the-golf-course-768142-1024x682.jpg" alt="" />
         <div style="float:right; padding-right:10%">
-            <h1>Count of balls:</h1>
-            <h1>{{ count }}</h1>
+            <h1>Welcome,{{name}}</h1>
+            <h2>Count of balls:</h2>
+            <h2>{{ count }}</h2>
+            <div ng-show="boolB && homerun" class="fade">
+                WHoaaa...Homerun!!!!
+            </div>
+            <div ng-show="boolB && !homerun" class="fade">
+                Out!!
+            </div>
+            <div ng-show="boolG && hole" class="fade">
+                Whoaaa..Hole!!
+            </div>
+            <div ng-show="boolG && !hole" class="fade">
+                Missed!!
+            </div>
+            <style>
+            .fade.ng-hide {
+            transition:0.5s linear all;
+            opacity:0;
+            }
+
+            </style>
+            
             <button style="align-content:center" type="button" ng-click="changeCount()">HIT! </button>
         </div>
     </div>

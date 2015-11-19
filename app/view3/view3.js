@@ -56,6 +56,6 @@ angular.module('myApp.view3', ['ngRoute'])
             }
 
            $scope.isHitting = true;
-           $timeout(function(){ $scope.isHitting=false; }, 1000);
+           $timeout(function(){ $scope.isHitting=false;}, 1000);
         };
     }]);

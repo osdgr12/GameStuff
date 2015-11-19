@@ -12,5 +12,9 @@ angular.module('myApp.view2', ['ngRoute'])
 .controller('View2Ctrl', ['$scope', 'view2Factory', function ($scope, view2Factory) {
     if ($scope) { console.log('its found'); }
     view2Factory.setIsBaseball(true);
-    view2Factory.setIsGolf(false);
+
+    $scope.setBB = function(value){
+        view2Factory.setIsBaseball(value);
+    }
+
 }]);

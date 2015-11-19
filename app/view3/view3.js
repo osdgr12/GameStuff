@@ -9,13 +9,16 @@ angular.module('myApp.view3', ['ngRoute'])
         });
     }])
 
-    .controller('View3Ctrl', ['$scope',function($scope) {
+    .controller('View3Ctrl', ['$scope','view3Factory',function($scope,view3Factory) {
         console.log('view3 is reached');
         if ($scope) {
             console.log('its found');
             $scope.count = 10;
         }
 
+        if (view3Factory) {
+            console.log('factory exists');
+        }
         $scope.isBaseball = true;
         $scope.isGolf = false;
         $scope.changeCount = function () {

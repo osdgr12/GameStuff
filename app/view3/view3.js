@@ -29,7 +29,7 @@ angular.module('myApp.view3', ['ngRoute'])
                 if ($scope.count > 0)
                     $scope.count -= 1;
                 if ($scope.count == 0) {
-                    alert('You ran out of balls');
+                    alert('You ran out of baseballs');
                 }
 
                 $scope.boolB = true;
@@ -44,7 +44,7 @@ angular.module('myApp.view3', ['ngRoute'])
                 if ($scope.count > 0)
                     $scope.count -= 1;
                 if ($scope.count == 0) {
-                    alert('You ran out of balls');
+                    alert('You ran out of golf balls');
 
                 }
 

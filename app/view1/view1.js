@@ -17,10 +17,16 @@ angular.module('myApp.view1', ['ngRoute'])
     }
 
     if (view1Factory) {
-        console.log('view3 factory exists');
+        console.log('view1 factory exists');
     }
     $scope.myFunction = function () {
         console.log('reached v1 event handler');
-        
+
     };
+    $scope.players=view1Factory.getPlayers();
+
+    $scope.selectSport=function($index){
+      view1Factory.setIndex($index);
+    };
+
 }]);

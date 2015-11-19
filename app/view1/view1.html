@@ -1,1 +1,9 @@
 <p>This is the partial for view 1.</p>
+<h3>Players:</h3>
+<table border="1" accesskey="left">
+    <tr  ng-repeat="player in players">
+        <td style="width:35%; height:20%"><a href="#/view2" ng-click="selectSport($index)">{{player.name}}</a> </td>
+        <td style="width:65%; height:20%"><a href="#/view2" ng-click="selectSport($index)"><img src=" {{player.image}} ">{{$index}}</a> </td>
+
+    </tr>
+</table>

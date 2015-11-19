@@ -11,15 +11,16 @@ angular.module('myApp.view3', ['ngRoute'])
 
     .controller('View3Ctrl', ['$scope','view3Factory','$timeout',function($scope,view3Factory,$timeout) {
         console.log('view3 is reached');
-        $scope.name = view3Factory.getPlayers()[0].name;
+        var index = view3Factory.getIndex();
+        $scope.name = view3Factory.getPlayers()[index].name;
 
        $scope.isBaseball = view3Factory.getIsBaseball();
 
        if ($scope.isBaseball) {
-           $scope.count = view3Factory.getPlayers()[0].bb;
+           $scope.count = view3Factory.getPlayers()[index].bb;
        }
        else{
-           $scope.count = view3Factory.getPlayers()[0].gb;
+           $scope.count = view3Factory.getPlayers()[index].gb;
        }
 
        $scope.changeCount = function () {

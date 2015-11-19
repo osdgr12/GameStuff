@@ -16,6 +16,8 @@ angular.module('myApp.view3', ['ngRoute'])
             $scope.count = 10;
         }
 
+        $scope.isBaseball = true;
+        $scope.isGolf = false;
         $scope.changeCount = function () {
             console.log('reached the event handler');
             if($scope.count>0)

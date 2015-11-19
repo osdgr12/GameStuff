@@ -9,7 +9,7 @@ angular.module('myApp.view3', ['ngRoute'])
         });
     }])
 
-    .controller('View3Ctrl', ['$scope','view3Factory',function($scope,view3Factory) {
+    .controller('View3Ctrl', ['$scope','view3Factory','$timeout',function($scope,view3Factory,$timeout) {
         console.log('view3 is reached');
         $scope.name = view3Factory.getPlayers()[0].name;
 

@@ -3,16 +3,23 @@
 
 <div ng-repeat="player in players" >
 <div id="user-card" class="w3-card-2 w3-white" style="float:left">
-    <div class="container">
-        <a href="#/view2" ng-click="selectSport($index)"><img src=" {{player.image}} "></a>
-    </div>
-    <div>
-        <a href="#/view2" ng-click="selectSport($index)">
-            <b>{{player.name}}<br><br><br>Skills:</b><br><br>
-            Golf:&nbsp;{{player.gb}}<br>
-            Base Ball: &nbsp;{{player.bb}}
-        </a>
-    </div>
+    <table><tr ><td class="container">
+
+            <a href="#/view2" ng-click="selectSport($index)"><img src=" {{player.image}} "></a>
+        <br><br><b>
+        {{player.name}}
+    </b>
+    </td><td>
+        <div>
+            <a href="#/view2" ng-click="selectSport($index)">
+                <br><br><br><b>Skills:<br><br>
+                Golf:&nbsp;{{player.gb}}<br>
+                Base Ball: &nbsp;{{player.bb}}</b>
+            </a>
+        </div>
+
+    </td></tr></table>
+
 
 </div>
 </div>

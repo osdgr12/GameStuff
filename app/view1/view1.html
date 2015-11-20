@@ -1,11 +1,11 @@
 <p>This is the partial for view 1.</p>
 <h3>Players:</h3>
-<table border="1" accesskey="left">
+<table style="width:95%" border="1" accesskey="left">
     <tr ng-class-odd="'odd'" ng-class-even="'even'" class="container" ng-repeat="player in players">
         <td ><a href="#/view2" ng-click="selectSport($index)">
             <b>{{player.name}}<br><br><br>Skills:</b><br><br>
             Golf:&nbsp;{{player.gb}}<br>
-            Base Ball: &nbsp;{{player.bb}}
+            Baseball: &nbsp;{{player.bb}}
         </a> </td>
         <td style="width:60%"><a href="#/view2" ng-click="selectSport($index)"><img src=" {{player.image}} "></a> </td>
     </tr>

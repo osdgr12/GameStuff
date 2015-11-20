@@ -1,11 +1,13 @@
-<div style="background: green">
+<div style="background:lightgreen; width:97%">
     <b>
         Showing of 'interpolate' filter:
         {{ 'Current version is v%VERSION%.' | interpolate }}
-        <br>&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;<br>
+
         <a href="#/view3" id= 'bbbutton' ng-click="setBB(true);">Baseball</a>
         &nbsp;&nbsp;
         <a href="#/view3" id = 'gbutton' ng-click="setBB(false);">Golf</a>
+        <br>
     </b>
 </div>
 <div id="map" class="ng-show" style="height:400px;width:600px"></div>

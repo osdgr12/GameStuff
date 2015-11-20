@@ -5,7 +5,7 @@
     <title>Playing Page</title>
 </head>
 <body>
-<div style="background: green">
+<div style="background: lightgreen">
     <img ng-show="isBaseball && !isHitting" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="stopBB.png" />
         <img ng-show="isBaseball && isHitting" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="goBB.gif" />
         <img ng-show="!isBaseball && !isHitting" style="-webkit-user-select: none; width:70%; height:80%; align-content:center" src="stopGolf.png" />
@@ -14,10 +14,10 @@
             <h1>Welcome,{{name}}</h1>
             <h2>Count of balls:</h2>
             <h2>{{ count }}</h2>
-            <div ng-show="boolB && homerun" class="fade">
+            <div ng-show="boolB && homerun">
                 WHoaaa...Homerun!!!!
             </div>
-            <div ng-show="boolB && !homerun" class="fade">
+            <div ng-show="boolB && !homerun">
                 Out!!
             </div>
             <div ng-show="boolG && hole" class="fade">

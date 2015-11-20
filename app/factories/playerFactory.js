@@ -11,7 +11,7 @@
     //];
 
     var players = [
-        { id: 1, name: "Gaurav", image: "http://ecx.images-amazon.com/images/I/91JqImGjL2L._SL1500_.jpg", bb: 9, gb: 9
+        { id: 1, name: "Gaurav", image: "http://www.wallhogs.com/images/products/orig/1369.gif", bb: 9, gb: 9
         },
         { id: 2, name: "Rajesh", image: "http://images.supersport.com/2015/7/Paul-Dunne-150720-Waves-G-300.jpg", bb: 7, gb: 7},
         { id : 3, name : "Jason", image: "http://www.clipartbest.com/cliparts/7ia/Kqy/7iaKqye5T.png", bb : 4, gb : 5},

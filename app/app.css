@@ -43,3 +43,27 @@ a {
     color: blue;
     text-decoration: none; /* no underline */
 }
+
+.container {
+    width: 100px;
+    height: 60px;
+}
+
+/* resize images */
+.container img {
+    width: 50%;
+    height: auto;
+}
+
+.odd {
+    background-color: #EEE8AA;
+}
+.even {
+    background-color: #98FB98;
+}
+.thcolor {
+    background-color:#9ACD32;
+    color: white;
+    width:97%;
+
+}

@@ -1,17 +1,27 @@
-<div style="background:lightgreen; width:97%">
+<div id="user-card" class="w3-card-2 w3-white container" style="float:left">
     <b>
-        Showing of 'interpolate' filter:
-        {{ 'Current version is v%VERSION%.' | interpolate }}
         <br>&nbsp;&nbsp;<br>
+        <table><tr><td>
+            <a href="#/view3" id= 'bbbutton' ng-click="setBB(true);"><img src="http://skisswaps.com/wp-content/uploads/2013/04/baseball-bat-baseball.jpg"></a>
+            <br><br>
 
-        <a href="#/view3" id= 'bbbutton' ng-click="setBB(true);">Baseball</a>
-        &nbsp;&nbsp;
-        <a href="#/view3" id = 'gbutton' ng-click="setBB(false);">Golf</a>
-        <br>
-    </b>
+        </td>
+
+        </tr>
+            <tr>
+            <td>
+                <a href="#/view3" id = 'gbutton' ng-click="setBB(false);"><img src="http://thumbs.dreamstime.com/z/golf-club-ball-11542731.jpg"></a>
+                <br>
+            </td></tr>
+
+
+         </tr>
+    </table>
+
+
 </div>
 <div id="map" class="ng-show" style="height:400px;width:600px"></div>
 
 <!--http://skisswaps.com/wp-content/uploads/2013/04/baseball-bat-baseball.jpg-->
 
-<!--http://thumbs.dreamstime.com/z/golf-club-ball-11542731.jpg-->
+<!---->

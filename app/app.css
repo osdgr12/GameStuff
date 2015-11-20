@@ -67,4 +67,10 @@ a {
 
 }
 
+#user-card{
+    width: 150px;
+    height: 100px;
+    margin: 16px;
+    padding: 16px;
+}
 

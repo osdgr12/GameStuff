@@ -11,12 +11,12 @@
     //];
 
     var players = [
-        { id: 1, name: "Gaurav", image: "http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Derek_Jeter_batting_stance_allison.jpg/250px-Derek_Jeter_batting_stance_allison.jpg", bb: 9, gb: 9, long:-82.97703709999999, lat: 40.1420033
+        { id: 1, name: "Gaurav", image: "http://www.wallhogs.com/images/products/orig/1369.gif", bb: 9, gb: 9, adr: "Mumbai, India"
         },
-        { id: 2, name: "Rajesh", image: "http://www.intotherough.co.uk/assets/_files/images/oct_08/itr__1223643724_vijay_singh_golf_equipment.jpg", bb: 7, gb: 7, long:-82.97703709999999, lat: 40.1420033},
-        { id : 3, name : "Jason", image: "http://a4.espncdn.com/photo/2014/0821/mlb_pete_rose_01.jpg", bb : 4, gb : 5, long:-82.97703709999999, lat: 40.1420033},
+        { id: 2, name: "Rajesh", image: "http://images.supersport.com/2015/7/Paul-Dunne-150720-Waves-G-300.jpg", bb: 7, gb: 7, adr: "Bear, Delaware"},
+        { id : 3, name : "Jason", image: "http://www.clipartbest.com/cliparts/7ia/Kqy/7iaKqye5T.png", bb : 4, gb : 5, adr:"Los Vegas, Nevada"},
         {
-            id: 4, name: "Mihaly", image: "http://www.nosolodeportes.com/images/2009/02/ernie-els.jpg", bb: 3, gb: 4, long:-82.97703709999999, lat: 40.1420033}
+            id: 4, name: "Mihaly", image: "http://www.sportspectator.com/fancentral/golf/GolfPlayer.jpg", bb: 3, gb: 4, adr:"Columbus, Ohio"}
     ];
 
     var isBaseball = false;

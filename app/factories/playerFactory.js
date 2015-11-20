@@ -16,7 +16,7 @@
         { id: 2, name: "Rajesh", image: "http://www.intotherough.co.uk/assets/_files/images/oct_08/itr__1223643724_vijay_singh_golf_equipment.jpg", bb: 7, gb: 7, adr: "Bear, Delaware"},
         { id : 3, name : "Jason", image: "http://a4.espncdn.com/photo/2014/0821/mlb_pete_rose_01.jpg", bb:10, gb:6, adr:"Las Vegas, Nevada"},
         {
-            id: 4, name: "Mihaly", image: "http://www.nosolodeportes.com/images/2009/02/ernie-els.jpg", bb: 3, gb: 4, adr:"Columbus, Ohio"}
+            id: 4, name: "Mihaly", image: "http://wpmedia.o.canada.com/2013/11/australia_world_cup_of_golf.jpg", bb: 3, gb: 4, adr:"Columbus, Ohio"}
     ];
 
     var isBaseball = false;

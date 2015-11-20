@@ -57,6 +57,14 @@ angular.module('myApp.view3', ['ngRoute'])
             }
 
            $scope.isHitting = true;
-           $timeout(function(){ $scope.isHitting=false;}, 1000);
-        };
+           if($scope.isBaseball) {
+               $timeout(function () {
+                   $scope.isHitting = false;
+               }, 1100);
+           }else{
+               $timeout(function () {
+                   $scope.isHitting = false;
+               }, 2000);
+           }
+       };
     }]);
